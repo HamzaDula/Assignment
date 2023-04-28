@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Live Instructional Video</title>
+	<style>
+		/* Grid layout */
+		.container {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: repeat(2, 1fr);
+			grid-gap: 20px;
+		}
+
+		/* Video player styles */
+		.video-player {
+			position: relative;
+			padding-bottom: 56.25%; /* 16:9 aspect ratio */
+			height: 0;
+		}
+		.video-player iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		/* Emotional status styles */
+		.emotional-status {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 2rem;
+		}
+		.emotional-status .emoji {
+			margin-right: 10px;
+		}
+		.green {
+			color: green;
+		}
+		.yellow {
+			color: yellow;
+		}
+		.red {
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<!-- Instructional video -->
+		<div class="video">
+			<iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
+		</div>
+		
+		<!-- Video player and emotional status -->
+		<div class="video-player">
+			<iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
+		</div>
+		<div class="emotion-status">
+            Emotional Status: <span class="green">&#128512;</span><br><br>
+            Emotional Status: <span class="green">&#128515;</span> <!-- replace with actual emoji codes -->
+        </div>
+	</div>
+</body>
+</html>
